@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Search</title>
+</head>
+<body>
+
+    <h2>Student Search</h2>
+
+    <input type="text" id="name" placeholder="Enter Student Name">
+
+    <button onclick="searchStudent()">Search</button>
+
+    <p id="result"></p>
+
+    <a href="index.html">Home</a>
+
+    <script>
+        function searchStudent() {
+            let name = document.getElementById("name").value;
+
+            if (name == "") {
+                alert("Enter Student Name!");
+            } else {
+                document.getElementById("result").innerHTML =
+                    "Searching for: " + name;
+            }
+        }
+    </script>
+
+</body>
+</html>
